@@ -1,1 +1,40 @@
+<form action="/teams" method="post">
 
+  <h1>Create a Team and Heroes!</h1>
+
+  <label for="team_name"> Team Name:</label>
+  <input id = "team_name" type="text" name="team[:name]"><br>
+  <label for="team_motto"> Team Motto:</label>
+  <input id = "team_motto" type="text" name="team[:motto]">
+
+  <h2>Hero 1</h2>
+
+  <label for="first_name"> Hero's Name:</label>
+  <input id="first_name" type="text" name="team[:hero][][:name]"><br>
+  <label for="first_power"> Hero's Power:</label>
+  <input id="first_power" type="text" name="team[:hero][][:power]"><br>
+  <label for="first_bio"> Hero's Biography:</label>
+  <input id="first_bio" type="text" name="team[:hero][][:biography]">
+
+  <h2>Hero 2</h2>
+
+  <label for="second_name"> Hero's Name:</label>
+  <input id="second_name" type="text" name="team[:hero][][:name]"><br>
+  <label for="second_power"> Hero's Power:</label>
+  <input id="second_power" type="text" name="team[:hero][][:power]"><br>
+  <label for="second_bio"> Hero's Biography:</label>
+  <input id="second_bio" type="text" name="team[:hero][][:biography]">
+
+  <h2>Hero 3</h2>
+
+  <label for="third_name"> Hero's Name:</label>
+  <input id = "third_name" type="text" name="team[:hero][][:name]"><br>
+  <label for="third_power"> Hero's Power:</label>
+  <input id = "third_power" type="text" name="team[:hero][][:power]"><br>
+  <label for="team_bio"> Hero's Biography:</label>
+  <input id = "third_bio" type="text" name="team[:hero][][:biography]"><br>
+  <br>
+
+  <input type="submit" name="submit">
+
+</form>
